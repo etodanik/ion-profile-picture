@@ -1,0 +1,25 @@
+{
+  "name": "ion-profile-picture",
+  "version": "0.0.1",
+  "homepage": "https://github.com/israelidanny/ion-profile-picture",
+  "authors": [
+    "Danny Povolotski <dannypovolotski@gmail.com>"
+  ],
+  "description": "A nice little directive for a profile picture selector",
+  "main": "ion-profile-picture.js",
+  "keywords": [
+    "ionic",
+    "maps",
+    "profile",
+    "picture",
+    "image"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
