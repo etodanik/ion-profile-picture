@@ -55,7 +55,7 @@ angular.module('ion-profile-picture', [])
             } else {
               // if our value is just a plain Base64 string, we will try
               // to be helpful and prepend the right stuff to it
-              if(!value.match(/^data:image\/jpg;base64,/i)){
+              if(!value.match(/^data:.*?;base64,/i)){
                 value = 'data:image/jpg;base64,' + value;
               }
 
