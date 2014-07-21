@@ -31,8 +31,10 @@ angular.module('ion-profile-picture', [])
             var reader = new FileReader();
 
             reader.onload = function(_e){
-              ngModel.$setViewValue(_e.target.result);
-              ngModel.$render();
+              scope.$apply(function(){
+                ngModel.$setViewValue(_e.target.result);
+                ngModel.$render();
+              })
             };
 
             file = e.target.files[0];
@@ -43,6 +45,15 @@ angular.module('ion-profile-picture', [])
               reader.readAsDataURL(file);
             }
           };
+
+          ngModel.$formatters.unshift(function (modelValue) {
+              if (!modelValue) return '';
+              return modelValue;
+          });
+
+          ngModel.$parsers.unshift(function (viewValue) {
+              return viewValue;
+          });
 
           ngModel.$render = function(){
             var value = ngModel.$viewValue;
