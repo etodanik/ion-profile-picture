@@ -78,7 +78,6 @@ angular.module('ion-profile-picture', [])
           };
 
           element.on('click', openFileDialog);
-          element.on('tap', openFileDialog);
           $input.on('change', onFilePick);
         }
       };
