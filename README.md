@@ -14,7 +14,7 @@ bower install ion-profile-picture
 
 Or clone this repository.
 
-You'll need to add `ion-google-picture` as a dependency on your Ionic app:
+You'll need to add `ion-profile-picture` as a dependency on your Ionic app:
 ```javascript
 angular.module('myApp', [
   'ionic',
